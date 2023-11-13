@@ -2,13 +2,14 @@ let items = document.getElementById("item")
 
 function gettinginfo() {
 
-    fetch('https://fakestoreapi.com/products')
+    fetch("https://fakestoreapi.com/products")
         .then(res => res.json())
         .then(data => {
+            
             for(let i =0; i < data.length;i++){
+           
 
             
-                console.log(data);
                 let bigDiv = document.createElement("div")
                 let newDiv = document.createElement("div")
                 let title = document.createTextNode(data[i].title)
@@ -49,7 +50,7 @@ function gettinginfo() {
                 let p = data[i].price
                 price.innerText = `Price: ${p}$`
                 bigDiv.appendChild(price)
-
+                
             }
         })
 
