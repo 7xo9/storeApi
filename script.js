@@ -2,7 +2,7 @@ let items = document.getElementById("item")
 
 function gettinginfo() {
 
-    fetch("https://fakestoreapi.com/products")
+    fetch('https://fakestoreapi.com/products')
         .then(res => res.json())
         .then(data => {
             for(let i =0; i < data.length;i++){
