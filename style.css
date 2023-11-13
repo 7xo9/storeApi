@@ -6,7 +6,7 @@
 .sec1Div{
     width: 100vw;
     height: 310vh;
-    background-color: rgb(149, 147, 145);
+    background-color: rgba(208, 208, 205, 0.463);
 
     
  
@@ -50,6 +50,31 @@
     display: flex;
     justify-content: end;
     width: 80vw;
+    align-items: center;
+    
+}
+
+.bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("https://w0.peakpx.com/wallpaper/506/226/HD-wallpaper-clothes-store-interior.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.you{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.or h3{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
 }
 
 @media (max-width: 900px) {
