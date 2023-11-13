@@ -12,15 +12,6 @@ singupBtn.addEventListener("click", ()=>{
 
     if(Password.length >= 8 && UserN.length >= 5){
 
-        fetch("https://6552924d5c69a779032a2d8c.mockapi.io/usersInfo")
-            .then(res=> res.json())
-            .then(data =>{
-                for(let i =0; i < data.length; i++){
-                    let UserNameInDB = data[i].UserN
-
-                    if(UserN == UserNameInDB){
-                        alert("This UserName is Taken")
-                    }else {
                         fetch("https://6552924d5c69a779032a2d8c.mockapi.io/usersInfo", {
                             method: "POST",
                             body: JSON.stringify({
@@ -46,9 +37,8 @@ singupBtn.addEventListener("click", ()=>{
 
                     }
 
-                })
+)
           
 
 
 
-    }})
